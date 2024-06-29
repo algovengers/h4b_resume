@@ -55,7 +55,7 @@ app.post('/analyse', upload.any(), async (req, res) => {
     res.status(201).json({msg: "success", data: text});
 });
 
-app.get('hit', (req, res) => {
+app.get('/hit', (req, res) => {
     res.status(200).json({msg:"ok"})
 })
 
